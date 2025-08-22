@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivprasad Vanshete - Data Analyst Portfolio</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6200ee;
+            border-radius: 4px;
+        }
+        /* Fade-in animation class */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="selection:bg-[#6200ee] selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-90 backdrop-blur-sm p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-[#e0e0e0] hover:text-[#6200ee] transition-colors duration-300">Shivprasad Vanshete</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-[#6200ee] transition-colors duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-[#6200ee] transition-colors duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-[#6200ee] transition-colors duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-[#6200ee] transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex items-center justify-center text-center fade-in">
+            <div class="space-y-6 px-4">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-[#e0e0e0]">Hi, I'm <span class="text-[#6200ee]">Shivprasad Vanshete</span></h1>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl text-[#e0e0e0] font-semibold">Data Analyst</h2>
+                <p class="text-lg sm:text-xl md:text-2xl text-[#a0a0a0] max-w-2xl mx-auto">Transforming complex data into actionable business insights.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
+                    <a href="#projects" class="bg-[#6200ee] text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300">View My work</a>
+                    <a href="#" class="border border-[#6200ee] text-[#6200ee] font-bold py-3 px-6 rounded-full hover:bg-[#6200ee] hover:text-white transition-colors duration-300">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container mx-auto p-8 md:p-16 fade-in">
+            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 bg-[#1e1e1e] rounded-lg p-8 shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                <div class="flex-shrink-0">
+                    <!-- Placeholder for professional headshot -->
+                    <img src="https://placehold.co/200x200/6200ee/e0e0e0?text=Headshot" alt="Your Name's Headshot" class="rounded-full w-48 h-48 object-cover border-4 border-[#6200ee] transform transition-transform hover:scale-105">
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl font-bold mb-4 text-[#e0e0e0]">About Me</h3>
+                    <p class="text-[#a0a0a0] text-lg leading-relaxed">
+Hi, I’m Shivprasad Vanshete – an AI & Data Science enthusiast turning raw data into smart, actionable insights. Skilled in Power BI, Python, SQL, and Machine Learning, I’ve built impactful dashboards, prediction models, and recommendation systems. With a passion for making complex data simple, I aim to create solutions that not only solve problems but inspire new ideas.                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto p-8 md:p-16 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 text-[#e0e0e0]">Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-xl font-semibold mb-4 text-[#e0e0e0] border-b-2 border-[#6200ee] pb-2">Programming Languages</h4>
+                    <ul class="list-disc list-inside space-y-2 text-[#a0a0a0]">
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <!-- Databases & Tools -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-xl font-semibold mb-4 text-[#e0e0e0] border-b-2 border-[#6200ee] pb-2">Databases & Visualization</h4>
+                    <ul class="list-disc list-inside space-y-2 text-[#a0a0a0]">
+                        <li>SQL</li>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+                <!-- Libraries & Frameworks -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-xl font-semibold mb-4 text-[#e0e0e0] border-b-2 border-[#6200ee] pb-2">Libraries & Cloud</h4>
+                    <ul class="list-disc list-inside space-y-2 text-[#a0a0a0]">
+                        <li>Pandas, NumPy, Scikit-learn</li>
+                        <li>AWS, GCP (Basics)</li>
+                        <li>Jupyter Notebooks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto p-8 md:p-16 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 text-[#e0e0e0]">Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-bold mb-2 text-[#e0e0e0]">Customer Churn Analysis Dashboard</h4>
+                    <p class="text-[#a0a0a0] mb-4">Created a dashboard to visualize customer churn patterns and retention trends. Cleaned and transformed raw data in Power Query Editor, and built interactive visuals with slicers for deeper insights.</p>
+                    <p class="text-sm font-semibold mb-4 text-[#e0e0e0]">Tools: <span class="font-normal text-[#a0a0a0]">Power BI, Power Query Editor, DAX</span></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#6200ee] hover:underline transition-colors duration-300">Live Demo</a>
+                        <a href="https://github.com/Shiv7823/PowerBI/blob/main/SaiketSystems.pbix" class="text-[#6200ee] hover:underline transition-colors duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+                                <!-- Project Card 2 -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-bold mb-2 text-[#e0e0e0]">Hospital Management System</h4>
+                    <p class="text-[#a0a0a0] mb-4">Built a menu-driven application to manage patient records, including adding, updating, deleting, and searching data, with persistent file storage.</p>
+                    <p class="text-sm font-semibold mb-4 text-[#e0e0e0]">Tools: <span class="font-normal text-[#a0a0a0]">Python, File Handling, OOP</span></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#6200ee] hover:underline transition-colors duration-300">Live Demo</a>
+                        <a href="https://github.com/Shiv7823/Python-Project-" class="text-[#6200ee] hover:underline transition-colors duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+                                  <!-- Project Card 3 -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-bold mb-2 text-[#e0e0e0]">Height Prediction of Adults</h4>
+                    <p class="text-[#a0a0a0] mb-4">Built a machine learning model to predict adult height based on features such as age, gender, and parental height. Preprocessed data, trained the model, and evaluated prediction accuracy of 90%.</p>
+                    <p class="text-sm font-semibold mb-4 text-[#e0e0e0]">Tools: <span class="font-normal text-[#a0a0a0]">Python, Pandas, Numpy, Scikit-learn, Jupyter Notebook</span></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#6200ee] hover:underline transition-colors duration-300">Live Demo</a>
+                        <a href="https://github.com/Shiv7823/Height-Prediction" class="text-[#6200ee] hover:underline transition-colors duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-bold mb-2 text-[#e0e0e0]">Netflix Movies Data Analysis</h4>
+                    <p class="text-[#a0a0a0] mb-4">Designed an interactive dashboard to analyze Netflix movies by genre, release year, and duration. Performed data cleaning and preprocessing in Power Query Editor, and used DAX for custom measures with dynamic filters.</p>
+                    <p class="text-sm font-semibold mb-4 text-[#e0e0e0]">Tools: <span class="font-normal text-[#a0a0a0]">Power BI, Power Query Editor, DAX</span></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#6200ee] hover:underline transition-colors duration-300">Live Demo</a>
+                        <a href="https://github.com/Shiv7823/PowerBI/blob/main/netflix%20data%20analysis.pbix" class="text-[#6200ee] hover:underline transition-colors duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+                 <!-- Project Card 5 -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-bold mb-2 text-[#e0e0e0]">Sales Analysis Dashboard</h4>
+                    <p class="text-[#a0a0a0] mb-4">Developed a dashboard to track sales performance, revenue trends, and regional sales distribution. Used Power Query Editor for data cleaning and transformation, and applied DAX for calculated KPIs such as total revenue, profit margin, and sales growth.</p>
+                    <p class="text-sm font-semibold mb-4 text-[#e0e0e0]">Tools: <span class="font-normal text-[#a0a0a0]">Power BI, Power Query Editor, DAX</span></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#6200ee] hover:underline transition-colors duration-300">Live Demo</a>
+                        <a href="https://github.com/Shiv7823/PowerBI/blob/main/Sales_Analysis_Dashboard.pbix" class="text-[#6200ee] hover:underline transition-colors duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education Section\ -->
+        <section id="certifications" class="container mx-auto p-8 md:p-16 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 text-[#e0e0e0]">Certifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Certifications -->
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-semibold mb-4 text-[#e0e0e0]">Data Analysis</h4>
+                    <ul class="space-y-4 text-[#a0a0a0]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">Data Analysis and Visualization with Power BI</p>
+                                <p class="text-sm">Coursera, 2025</p>
+                            </div>
+                        </li>
+                          <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]"> Foundations: Data, Data, Everywhere</p>
+                                <p class="text-sm">Coursera, 2025</p>
+                            </div>
+                        </li>
+                          <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">Data Analytics Job Simulation</p>
+                                <p class="text-sm">Deloitte, 2025</p>
+                            </div>
+                        </li>
+                           <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">SQL Basics</p>
+                                <p class="text-sm">HackerRank, 2025</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+                    <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-semibold mb-4 text-[#e0e0e0]">Data Analysis</h4>
+                    <ul class="space-y-4 text-[#a0a0a0]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">Data Analysis And Visualization With Microsoft PowerBI</p>
+                                <p class="text-sm">Coursera, 2025</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+                <section id="certifications" class="container mx-auto p-8 md:p-16 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 text-[#e0e0e0]">Education</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+         
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-semibold mb-4 text-[#e0e0e0]">Certifications</h4>
+                    <ul class="space-y-4 text-[#a0a0a0]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">✅</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">Google Data Analytics Professional Certificate</p>
+                                <p class="text-sm">Coursera, 2023</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#1e1e1e] p-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                    <h4 class="text-2xl font-semibold mb-4 text-[#e0e0e0]">Education</h4>
+                    <ul class="space-y-4 text-[#a0a0a0]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-[#6200ee]">🎓</span>
+                            <div>
+                                <p class="font-semibold text-[#e0e0e0]">Bachelor of Science in Data Science</p>
+                                <p class="text-sm">University Name, 2022</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto p-8 md:p-16 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 text-[#e0e0e0]">Get in Touch</h3>
+            <div class="max-w-2xl mx-auto bg-[#1e1e1e] p-8 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-purple-500/30">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-[#a0a0a0]">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md bg-[#121212] border-gray-700 focus:border-[#6200ee] focus:ring focus:ring-[#6200ee] focus:ring-opacity-50 transition-all duration-300 p-2">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-[#a0a0a0]">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md bg-[#121212] border-gray-700 focus:border-[#6200ee] focus:ring focus:ring-[#6200ee] focus:ring-opacity-50 transition-all duration-300 p-2">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-[#a0a0a0]">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-[#121212] border-gray-700 focus:border-[#6200ee] focus:ring focus:ring-[#6200ee] focus:ring-opacity-50 transition-all duration-300 p-2"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#6200ee] text-white font-bold py-3 px-4 rounded-md transition-transform transform hover:scale-105 duration-300">Send Message</button>
+                </form>
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-semibold text-[#e0e0e0]">Connect with me:</p>
+                    <div class="mt-4 flex justify-center space-x-6">
+                        <a href="#" class="text-[#6200ee] hover:text-[#e0e0e0] transition-colors duration-300">LinkedIn</a>
+                        <a href="#" class="text-[#6200ee] hover:text-[#e0e0e0] transition-colors duration-300">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-8 text-center text-[#a0a0a0] border-t border-[#1e1e1e]">
+            <p>&copy; 2024 Shivprasad Vanshete. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <!-- JavaScript for Fade-in Animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Unobserve after it becomes visible
+                }
+            });
+        }, {
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
